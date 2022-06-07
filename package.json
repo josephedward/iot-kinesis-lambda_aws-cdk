@@ -1,0 +1,36 @@
+{
+  "name": "iot-kinesis-lambda-app",
+  "version": "0.1.0",
+  "bin": {
+    "iot-kinesis-lambda-app": "bin/iot-kinesis-lambda-app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assertions": "^1.158.0",
+    "@types/jest": "^27.5.0",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-iot": "^1.158.0",
+    "@aws-cdk/aws-iot-actions": "^1.158.0",
+    "@aws-cdk/aws-kinesis": "^1.158.0",
+    "@aws-cdk/aws-lambda": "^1.158.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.158.0",
+    "@aws-cdk/core": "^1.158.0",
+    "@aws-cdk/pipelines": "^1.158.0",
+    "aws-cdk": "^1.158.0",
+    "cdk-dia": "^0.7.0",
+    "dotenv": "^16.0.1",
+    "source-map-support": "^0.5.21"
+  }
+}

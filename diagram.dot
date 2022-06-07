@@ -1,0 +1,113 @@
+digraph "Diagram" {
+  splines = "ortho";
+  pad = "1.0";
+  nodesep = "0.60";
+  ranksep = "0.75";
+  fontname = "Sans-Serif";
+  fontsize = "15";
+  dpi = "200";
+  rankdir = "BT";
+  compound = "true";
+  fontcolor = "#222222";
+  edge [
+    color = "#D5871488",
+    penwidth = 2,
+    arrowhead = "dot",
+    arrowtail = "dot",
+  ];
+  node [
+    shape = "box",
+    style = "rounded",
+    fixedsize = true,
+    width = 1.7,
+    height = 1.7,
+    labelloc = "c",
+    imagescale = true,
+    fontname = "Sans-Serif",
+    fontsize = 8,
+    margin = 8,
+  ];
+  subgraph "CdkPipelineAppStack" {
+    subgraph "cluster-SubGraph.CdkPipelineAppStack" {
+      graph [
+        label = "CdkPipelineAppStack",
+        labelloc = "b",
+        labeljust = "l",
+        margin = "10",
+        fontsize = "16",
+        penwidth = "2",
+        pencolor = "#888888",
+        style = "filled,rounded",
+        fillcolor = "#e4e4e4",
+      ];
+      subgraph "cluster-SubGraph.LambdaService" {
+        graph [
+          label = "LambdaService",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
+          label = " hub service info\ningress",
+          fontsize = 12,
+          image = "/Users/user1/Documents/GitHub/iot-kinesis-lambda-app/node_modules/cdk-dia/icons/aws/Service/Arch_Analytics/Arch_64/Arch_Amazon-Kinesis_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 2,
+          height = 2.4819999999999998,
+        ];
+        "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
+          label = " HubServiceLogGroup",
+          fontsize = 12,
+          image = "/Users/user1/Documents/GitHub/iot-kinesis-lambda-app/node_modules/cdk-dia/icons/aws/Resource/Res_Management-Governance/Res_48_Dark/Res_Amazon-Cloudwatch_Logs_48_Dark_gen.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 2,
+          height = 2.266,
+        ];
+        "CdkPipelineAppStack/LambdaService/hub_service" [
+          label = " hub_service",
+          fontsize = 12,
+        ];
+        "CdkPipelineAppStack/LambdaService/sensi_hub_service" [
+          label = " sensi_hub_service",
+          fontsize = 12,
+          image = "/Users/user1/Documents/GitHub/iot-kinesis-lambda-app/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 2,
+          height = 2.266,
+        ];
+      }
+    }
+  }
+  "CdkPipelineAppStack/LambdaService/hub_service" -> "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
+    dir = "both",
+  ];
+  "CdkPipelineAppStack/LambdaService/hub_service" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
+    dir = "both",
+  ];
+  "CdkPipelineAppStack/LambdaService/sensi_hub_service" -> "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
+    dir = "both",
+  ];
+  "CdkPipelineAppStack/LambdaService/sensi_hub_service" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
+    dir = "both",
+  ];
+}
