@@ -1,3 +1,1 @@
-
-
-aws s3 cp LambdaDemo-NoPerms.zip s3://iot-kinesis-lambda
+aws s3 cp Lambda-Test.zip s3://sensi-hub-service-artifacts-sandbox

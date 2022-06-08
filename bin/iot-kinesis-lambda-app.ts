@@ -6,7 +6,7 @@ import { IotKinesisLambdaStack } from "../lib/app/stacks/iot-kinesis-lambda-stac
 const app = new cdk.App();
 new IotKinesisLambdaStack(app, "CdkPipelineAppStack", {
   env: {
-    account: "794548384198",
+    account: "186104823600",
     region: "us-east-1",
   },
 });

@@ -52,8 +52,8 @@ digraph "Diagram" {
           style = "filled,rounded",
           fillcolor = "#d6d6d6",
         ];
-        "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
-          label = " hub service info\ningress",
+        "CdkPipelineAppStack/LambdaService/HubServiceKinesisStream" [
+          label = "\nHubServiceKinesisStre",
           fontsize = 12,
           image = "/Users/user1/Documents/GitHub/iot-kinesis-lambda-app/node_modules/cdk-dia/icons/aws/Service/Arch_Analytics/Arch_64/Arch_Amazon-Kinesis_64@5x.png",
           imagescale = "true",
@@ -78,12 +78,12 @@ digraph "Diagram" {
           width = 2,
           height = 2.266,
         ];
-        "CdkPipelineAppStack/LambdaService/hub_service" [
-          label = " hub_service",
+        "CdkPipelineAppStack/LambdaService/HubServiceTopicRule" [
+          label = " HubServiceTopicRule",
           fontsize = 12,
         ];
-        "CdkPipelineAppStack/LambdaService/sensi_hub_service" [
-          label = " sensi_hub_service",
+        "CdkPipelineAppStack/LambdaService/HubServiceIotKinesisLambda" [
+          label = "\nHubServiceIotKinesisL",
           fontsize = 12,
           image = "/Users/user1/Documents/GitHub/iot-kinesis-lambda-app/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
           imagescale = "true",
@@ -93,21 +93,21 @@ digraph "Diagram" {
           fixedsize = "true",
           labelloc = "b",
           width = 2,
-          height = 2.266,
+          height = 2.4819999999999998,
         ];
       }
     }
   }
-  "CdkPipelineAppStack/LambdaService/hub_service" -> "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
+  "CdkPipelineAppStack/LambdaService/HubServiceTopicRule" -> "CdkPipelineAppStack/LambdaService/HubServiceKinesisStream" [
     dir = "both",
   ];
-  "CdkPipelineAppStack/LambdaService/hub_service" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
+  "CdkPipelineAppStack/LambdaService/HubServiceTopicRule" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
     dir = "both",
   ];
-  "CdkPipelineAppStack/LambdaService/sensi_hub_service" -> "CdkPipelineAppStack/LambdaService/hub_service_info_ingress" [
+  "CdkPipelineAppStack/LambdaService/HubServiceIotKinesisLambda" -> "CdkPipelineAppStack/LambdaService/HubServiceKinesisStream" [
     dir = "both",
   ];
-  "CdkPipelineAppStack/LambdaService/sensi_hub_service" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
+  "CdkPipelineAppStack/LambdaService/HubServiceIotKinesisLambda" -> "CdkPipelineAppStack/LambdaService/HubServiceLogGroup" [
     dir = "both",
   ];
 }
