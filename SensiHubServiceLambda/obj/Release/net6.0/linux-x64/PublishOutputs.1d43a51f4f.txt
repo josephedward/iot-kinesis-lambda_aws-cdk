@@ -1,0 +1,12 @@
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/SensiHubServiceLambda.deps.json
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/SensiHubServiceLambda.runtimeconfig.json
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/SensiHubServiceLambda.pdb
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/Amazon.Lambda.Core.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/Amazon.Lambda.KinesisEvents.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/Amazon.Lambda.Serialization.SystemTextJson.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/AWSSDK.Core.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/AWSSDK.IoT.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/AWSSDK.Kinesis.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/Microsoft.Extensions.DependencyInjection.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/user1/Documents/GitHub/_emersonsoftware/_sensi-iot-kinesis-lambda-infra/SensiHubServiceLambda/bin/Release/lambda-publish/SensiHubServiceLambda.dll

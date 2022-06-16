@@ -2,12 +2,19 @@
 import "source-map-support/register";
 import * as cdk from "@aws-cdk/core";
 import { IotKinesisLambdaStack } from "../lib/app/stacks/iot-kinesis-lambda-stack";
+import { vars } from "../lib/app/services/env-vars";
+require("dotenv").config();
+// need to fix after testing 
+const user = "sandbox"
+// const user = (process.env.AWS_PROFILE = "cloud_user" ? "sandbox" : "stage");
+const acct = vars.account[user]
+const reg = vars.region[user]
 
 const app = new cdk.App();
-new IotKinesisLambdaStack(app, "CdkPipelineAppStack", {
+new IotKinesisLambdaStack(app, "HubServiceCdkStack", {
   env: {
-    account: "186104823600",
-    region: "us-east-1",
+    account: acct,
+    region: reg,
   },
 });
 app.synth();

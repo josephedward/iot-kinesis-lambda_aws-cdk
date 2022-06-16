@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SensiHubServiceLambda
+build_property.ProjectDir = /Users/user1/Documents/GitHub/_emersonsoftware/SensiHubService/src/SensiHubServiceLambda/

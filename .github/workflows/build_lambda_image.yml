@@ -1,0 +1,53 @@
+name: build_lambda_image
+on:
+  workflow_dispatch:
+    inputs:
+      AWS_ACCESS_KEY_ID:
+        description: "Access Key ID with Permissions to deploy"
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        description: "Secret Access Key with Permissions to deploy"
+        required: true
+      AWS_REGION:
+        description: "Region to deploy to."
+        required: true
+      ECR_REPO:
+        description: "Name of ECR docker image repository"
+        required: true
+
+jobs:
+  build_lambda_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v1
+
+      - name: Configure aws credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ github.event.inputs.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ github.event.inputs.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ github.event.inputs.AWS_REGION }}
+
+      - uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: "6.0.x"
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: push lambda image
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ github.event.inputs.ECR_REPO }}
+          # sensihubservicelambda
+          IMAGE_TAG: latest
+        run: |
+          cd SensiHubServiceLambda
+          aws ecr create-repository --repository-name $ECR_REPOSITORY | echo "repo already created" 
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          echo "Pushing image to ECR..."
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"

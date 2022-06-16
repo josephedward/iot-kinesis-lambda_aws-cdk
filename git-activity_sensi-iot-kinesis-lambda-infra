@@ -1,0 +1,160 @@
+* 896fe70 (HEAD -> main, origin/main) Update deploy_cdk_infra.yml
+* e9c053f Update deploy_cdk_infra.yml
+* 4a7035a Update deploy_cdk_infra.yml
+* 01448a5 Update deploy_cdk_infra.yml
+* 5131d9a Update deploy_cdk_infra.yml
+* 6b0613e Update deploy_cdk_infra.yml
+* 75cfbef Update deploy_cdk_infra.yml
+* f7824b7 Update deploy_cdk_infra.yml
+* 5d0a137 Update deploy_cdk_infra.yml
+* 71eee05 Update deploy_cdk_infra.yml
+* e1a2007 Update deploy_cdk_infra.yml
+* 75a05c0 Update deploy_cdk_infra.yml
+* 05044a6 Update deploy_cdk_infra.yml
+* 9ff5eb7 Update deploy_cdk_infra.yml
+* 3bb26f4 script
+* 63057f9 Update deploy_cdk_infra.yml
+* 8cfc1f0 Update deploy_cdk_infra.yml
+* 25929ad Update deploy_cdk_infra.yml
+* 78de856 Update deploy_cdk_infra.yml
+* 70db6f7 Update deploy_cdk_infra.yml
+* c851177 Update deploy_cdk_infra.yml
+* 46f3b63 Update deploy_cdk_infra.yml
+* 8d2c83e Update deploy_cdk_infra.yml
+* 16bf1f1 Update deploy_cdk_infra.yml
+* 6e3758f Update deploy_cdk_infra.yml
+* 59c9a48 Update deploy_cdk_infra.yml
+* 3714a94 Update deploy_cdk_infra.yml
+* c4877d5 Update deploy_cdk_infra.yml
+* d7e6ee7 Update deploy_cdk_infra.yml
+* 442a6bd Update deploy_cdk_infra.yml
+* 7f095eb separate workflows
+* 1591c38 Update manual-deploy.yml
+* 9af5ab7 Update manual-deploy.yml
+* 03c34ca Update manual-deploy.yml
+* aa5923b github env
+* 8f0363c Update manual-deploy.yml
+* a65473e Update manual-deploy.yml
+* 95b158a Update manual-deploy.yml
+* 43cae87 Update manual-deploy.yml
+* dad5022 Update manual-deploy.yml
+* b5ad5b9 Update manual-deploy.yml
+* ef92dcf env
+* 79941c5 separating jobs, ssm param
+* e6e6a9b Update manual-deploy.yml
+* 4f5e1f5 manual deployment
+* cb4b19a Update bootstrap.yml
+* e84576b Update bootstrap.yml
+* a038f8b Update bootstrap.yml
+* 2bf5cc4 Update bootstrap.yml
+* 2760dd7 docker
+* cf97b12 Update aws-lambda-tools-defaults.json
+* 3b4aa0b Update bootstrap.yml
+* ec0772e Update Dockerfile
+* 9885219 Update Dockerfile
+* bb5c9d1 Update bootstrap.yml
+* 83c12d9 Update bootstrap.yml
+* 40282ba Update bootstrap.yml
+* 426e58e Update bootstrap.yml
+* 127d3d2 Update bootstrap.yml
+* 883952b Update bootstrap.yml
+* adad424 Update bootstrap.yml
+* 425611c Update bootstrap.yml
+* d93b56b Update bootstrap.yml
+* 687c8fb temp change for testing deploy
+* 70d5afa Update lambda-service.ts
+* 5f678dd github build
+* 7a09e3d Squashed commit of the following:
+| * cb268e6 (origin/sandbox, sandbox) ecr cdk
+| * 9bdb81f dotnet stuff
+| * 10e43eb Update aws-lambda-tools-defaults.json
+| *   2c42c3d Merge branch 'main' into sandbox
+| |\  
+| |/  
+|/|   
+* | f005bf5 env vars, docker, workflow stuff
+* | 1caa5b7 Update iot-kinesis-lambda-app.ts
+* | 1f5dd67 Update bootstrap.yml
+* | 6990e46 Update bootstrap.yml
+* | a93c9c5 Update bootstrap.yml
+* | c6530e8 Squashed commit of the following:
+| * 0828d88 env vars and github workflow
+| * 05f56f9 removal policy
+| *   5a0ddd5 Merge branch 'main' into sandbox
+| |\  
+| |/  
+|/|   
+| * 5862715 Update iot-kinesis-lambda-app.ts
+| * 493651c kinesis event source props
+| * 51d9c7b cloudwatch log group
+| * a40e9d7 Update iot-kinesis-lambda-app.ts
+| * 132b3c8 Update lambda-service.ts
+| * 4d8a1cf Update iot-kinesis-lambda-app.ts
+| * 1105d18 Update iot-kinesis-lambda-app.ts
+| * 8fda484 Update lambda-service.ts
+| * 0a84f00 update
+| * 550176b Update lambda-service.ts
+| * 4ab2826 rename
+| * c41a20c Update lambda-service.ts
+| * 148048d Update iot-kinesis-lambda-app.ts
+| *   828c857 Merge branch 'main' into sandbox
+| |\  
+| * | 36c837e Update .gitignore
+| * | d81cd22 Update iot-kinesis-lambda-example.ts
+| | | * 0b9e96a (origin/emr-sensi-stage, emr-sensi-stage) Update lambda-service.ts
+| | | * a3d5b65 Update lambda-service.ts
+| | | * 1e0856a Update lambda-service.ts
+| | | * 154ecf7 Update lambda-service.ts
+| | | * 75b13de Update iot-kinesis-lambda-app.ts
+| | | * f153c9e Squashed commit of the following:
+| | | * 3fd75d5 remove diagram html
+| |_|/  
+|/| |   
+* | | 6fddb19 Update iot-kinesis-lambda-app.test.ts
+* | | 1187f1a Update iot-kinesis-lambda-app.test.ts
+* | |   aec9b79 Merge branch 'emr-sensi-stage'
+|\ \ \  
+| * | | dea5517 rename example -> app
+| * | | 20d9a86 Update lambda-service.ts
+| * | | 7e5ecb6 Update iot-kinesis-lambda-example.test.ts
+| * | | 8a6521e Update lambda-service.ts
+| * | | 3da850c Update lambda-service.ts
+| * | | 5ae8bff Update lambda-service.ts
+| * | | c2c9e5c Update lambda-service.ts
+| * | | e7684f4 Update lambda-service.ts
+| * | | f577a6e Update lambda-service.ts
+| * | | 5e38101 Update lambda-service.ts
+| * | | 899dfe8 Update lambda-service.ts
+| * | | fa59beb Update lambda-service.ts
+| * | | c70955f Update lambda-service.ts
+| * | | 832c92d Update lambda-service.ts
+| * | | 7890c5b Update lambda-service.ts
+| * | | cdd4959 s3 info
+| * | | 82bb3c6 Update iot-kinesis-lambda-app.ts
+| * | | a4358f8 Squashed commit of the following:
+| | |/  
+| |/|   
+* | | 14bf6e4 Squashed commit of the following:
+* | | da6bbd0 cdk-dia
+* | | 68f54cb Squashed commit of the following:
+* | | 1290546 Update iot-kinesis-lambda-app.ts
+* | | 650dfd4 Update lambda-service.ts
+* | | c581216 update
+* | | e478f20 Update lambda-service.ts
+|/ /  
+* | 32f1cbc rename
+* |   d57478a Merge branch 'main' into emr-sensi-stage
+|\ \  
+| * | 69fbf80 update
+| * | c1836a0 update
+| * | 67a6b56 update
+| |/  
+* | 9a82198 Update .gitignore
+* | 0acdafa em account
+|/  
+* af7b52f token
+* d514fe1 pipeline
+* d07c2af Update iot-service.ts
+* 583b471 update
+* e3d1c46 update
+* e6e1d33 1

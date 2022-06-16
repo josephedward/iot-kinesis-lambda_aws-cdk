@@ -1,0 +1,174 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SensiHubServiceLambda/1.0.0": {
+        "dependencies": {
+          "AWSSDK.IoT": "3.7.13.16",
+          "Amazon.Lambda.Core": "2.1.0",
+          "Amazon.Lambda.KinesisEvents": "2.0.0",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0"
+        },
+        "runtime": {
+          "SensiHubServiceLambda.dll": {}
+        }
+      },
+      "Amazon.Lambda.Core/2.1.0": {
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.KinesisEvents/2.0.0": {
+        "dependencies": {
+          "AWSSDK.Kinesis": "3.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.KinesisEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.11.14": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.11.14"
+          }
+        }
+      },
+      "AWSSDK.IoT/3.7.13.16": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.11.14"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.IoT.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.13.16"
+          }
+        }
+      },
+      "AWSSDK.Kinesis/3.7.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.11.14"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Kinesis.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+    }
+  },
+  "libraries": {
+    "SensiHubServiceLambda/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amazon.Lambda.Core/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ok06UhfBZw6j6+PhiJR9C0EOMuJvnq8rMCHVkaFmPFrlI/q447ukwGZQKaAKqodV+MNTfpb/iPxjgUPVbSlVVw==",
+      "path": "amazon.lambda.core/2.1.0",
+      "hashPath": "amazon.lambda.core.2.1.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.KinesisEvents/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wgSrDsAD8bDJbpfbK5Sg4eqp6p2BJQn+rqLAFHr/cXMFuF6XDwqbMFUrhUIG09DqIl++TFHvNDyy/0ySESDBZQ==",
+      "path": "amazon.lambda.kinesisevents/2.0.0",
+      "hashPath": "amazon.lambda.kinesisevents.2.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qgFCDJp5lyUNqCq1z18U7fZ/+rmMyw6RJf9nKfnJrf79YupDj02klQAjxymEYN66NykWXyc68SGkow6fy53hfg==",
+      "path": "amazon.lambda.serialization.systemtextjson/2.3.0",
+      "hashPath": "amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.11.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uIHHB/qz8b3pwAzsYLakaWAZJSP7SbWicJN/YIz+/nH/r/UrQ79ifZKLOqmbVPvusvH0i1dB2HXEv7H3KEiqVA==",
+      "path": "awssdk.core/3.7.11.14",
+      "hashPath": "awssdk.core.3.7.11.14.nupkg.sha512"
+    },
+    "AWSSDK.IoT/3.7.13.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G1zriHUi8X2b02TbD3oDoDzUD3eJCO3E17HfYVlzugPip7BxY/nknvzw4GAMR3mCwl8DOXzdT5iQst02hr18pw==",
+      "path": "awssdk.iot/3.7.13.16",
+      "hashPath": "awssdk.iot.3.7.13.16.nupkg.sha512"
+    },
+    "AWSSDK.Kinesis/3.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1p5BbqzAC3C7UYAbh4Y+i8X0XVorIy1+5BIbqo0bM5pDO+dru/YhtJdqdlVIvqKoU1aKKvUBeOZ6L59zfNcaMQ==",
+      "path": "awssdk.kinesis/3.7.0",
+      "hashPath": "awssdk.kinesis.3.7.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k6PWQMuoBDGGHOQTtyois2u4AwyVcIwL2LaSLlTZQm2CYcJ1pxbt6jfAnpWmzENA/wfrYRI/X9DTLoUkE4AsLw==",
+      "path": "microsoft.extensions.dependencyinjection/6.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    }
+  }
+}

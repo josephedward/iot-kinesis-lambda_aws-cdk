@@ -1,0 +1,63 @@
+name: deploy_cdk_infra
+on:
+  # on:
+  # workflow_dispatch:
+  #   inputs:
+  #     AWS_ACCESS_KEY_ID:
+  #       description: "Access Key ID with Permissions to deploy"
+  #       required: true
+  #     AWS_SECRET_ACCESS_KEY:
+  #       description: "Secret Access Key with Permissions to deploy"
+  #       required: true
+  #     AWS_REGION:
+  #       description: "Region to deploy to."
+  #       required: true
+  #     ECR_REPO:
+  #       description: "Name of ECR docker image repository"
+  #       required: true
+  push:
+    branches: [main]
+jobs:
+  deploy_cdk_infra:
+    env:
+      AWS_ACCESS_KEY_ID: ${{secrets.SANDBOX_ID}}
+      AWS_SECRET_ACCESS_KEY: ${{secrets.SANDBOX_KEY}}
+      AWS_DEFAULT_REGION: us-east-1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Set env
+        run: |
+          aws --version
+          aws ssm get-parameter --name hubserviceenv --with-decryption --query 'Parameter.Value' > .env
+          File=".env"
+          Lines=$(cat $File)
+          for line in $Lines; 
+            do
+              IFS="="
+              lineArr=($line)
+              key=${lineArr[0]}
+              value=${lineArr[1]}
+              echo "$key=$value" 
+          done
+
+      # - name: Install
+      #   run: |
+      #     npm install
+      #     npm i aws-cdk
+      #     npm run build
+
+      # - name: Test infra
+      #   run: npm run test
+
+      # - name: Synth stack
+      #   run: npx aws-cdk synth
+
+      # - name: Deploy stack
+      #   run: npx aws-cdk deploy --create-change-set
