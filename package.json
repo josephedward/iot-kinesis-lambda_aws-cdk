@@ -31,6 +31,7 @@
     "aws-cdk": "^1.158.0",
     "cdk-dia": "^0.7.0",
     "dotenv": "^16.0.1",
+    "env-ssm": "^0.1.3",
     "source-map-support": "^0.5.21"
   }
 }

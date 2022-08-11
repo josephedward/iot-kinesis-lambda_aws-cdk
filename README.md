@@ -1,8 +1,5 @@
 # IotKinesisLambda - AWS CDK 
 
-**Upload Lambda to S3**
-
-
 ## Useful commands
 
 * `npm run build`   compile typescript to js
